@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author yourNameHere
+ *
+ */
 public class Card implements Comparable<Card>
 {
 	private String name;
