@@ -2,9 +2,9 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * Describes a collection of Cards by its owner
+ * Add a description!
  * @author yourNameHere
- * @version 1.0
+ * @version 1.0 <- increment this as you make changes and delete this note!
  */
 public class CardCollection 
 {

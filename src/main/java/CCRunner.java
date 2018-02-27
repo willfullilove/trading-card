@@ -1,7 +1,7 @@
 /**
- * A runner class to test the Card and CardCollection classes
+ * Add a description!
  * @author yourNameHere
- *
+ * @version 1.0 <- increment this as you make changes and delete this note!
  */
 public class CCRunner 
 {

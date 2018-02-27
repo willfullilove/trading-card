@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Test class for Card
  * @author Stephen Goebel
- *
+ * @version 1.0
  */
 public class CardTest 
 {

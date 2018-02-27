@@ -3,6 +3,11 @@ import org.junit.Before;
 import org.junit.After;
 import static org.junit.Assert.*;
 
+/**
+ * Test class for CardCollection
+ * @author stephengoebel
+ * @version 1.0
+ */
 public class CardCollectionTest 
 {
 	private CardCollection john;
