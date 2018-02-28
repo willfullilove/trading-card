@@ -76,4 +76,13 @@ public class CardCollection
 	{
 		return myCollection;
 	}
+	
+	/**
+	 * Gets the owner of the collection - Don't touch this method!
+	 * @return owner
+	 */
+	public String getOwner()
+	{
+		return owner;
+	}
 }

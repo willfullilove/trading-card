@@ -14,27 +14,29 @@ public class CardCollectionTest
 	private CardCollection amy;
 	private Card card1;
 	private Card card2;
-	private Card card3;
-	private Card card4;
-	private Card card5;
-	
 	
 	@Before
 	public void setUp() throws Exception
 	{
-		
+		john = new CardCollection("John");
+		amy = new CardCollection("Amy");
+		card1 = new Card("Alan Turing", "British", 1912,1954);
+		card2 = new Card("Vint Cerf", "American", 1943,-1);
 	}
 	
 	@After
 	public void tearDown() throws Exception
 	{
-		
+		john = null;
+		amy = null;
+		card1 = null;
+		card2 = null;
 	}
 	
 	@Test
 	public void constructorTest()
 	{
-		assertTrue(true);
+		
 	}
 	
 	@Test
