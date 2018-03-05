@@ -1,19 +1,20 @@
 # TradingCardProject
 
-In this project, you will practice using the List interface, the Comparable interface and the ArrayList class to manage a group of collectable trading cards. 
-Card.java 
+In this project, you will practice using the List interface, the Comparable interface and the ArrayList class to manage a group of collectable trading cards.
+
+Card.java
 
 I. Design a class called Card in a file called Card.java. This class will hold four private fields, a constructor, and two public methods. This class will implement the Comparable interface with a Card generic. You should define your own class with a main method to test the methods that you write in Card.java.
 
 II. Create four private fields for your class (name, nationality, yearBorn, yearDied). The descriptions of these variables are provided below. 
 
-a.	The name variable is a String. It holds the name of the computer scientist featured on this card.  
+a.	The name variable is a String. It holds the name of the computer scientist featured on this card. 
 
-b.	The nationality variable is a String. It holds a descriptor for the country of origin for the computer  scientist featured on this card.  
+b.	The nationality variable is a String. It holds a descriptor for the country of origin for the computer scientist featured on this card. 
 
 c.	The yearBorn variable is an integer. It holds the year of birth of the computer scientist featured on this card. 
 
-d.	The yearDied variable is an integer. It holds the year of death of the computer scientist featured on this  card, or -1 if the computer scientist is still living. 
+d.	The yearDied variable is an integer. It holds the year of death of the computer scientist featured on this card, or -1 if the computer scientist is still living. 
 
 III. Write a simple constructor for the Card class. It should take in one argument for each field defined in the class, and then set them accordingly. 
 
