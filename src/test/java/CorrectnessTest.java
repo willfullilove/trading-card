@@ -3,6 +3,8 @@ import org.junit.Before;
 import org.junit.After;
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 /**
  * More specific tests of the project - looking at edge cases.
  * @author Stephen Goebel
@@ -20,6 +22,7 @@ public class CorrectnessTest
 	private Card lovelace;
 	private Card cerf;
 	private Card brin;
+	private List<Card> dupes;
 	
 	@Before
 	public void setUp() throws Exception
@@ -56,24 +59,34 @@ public class CorrectnessTest
 	@Test
 	public void test1()
 	{
-		
+		assertTrue("You are not putting the cards in order inside the List",c1.getCollection().get(5).equals(cerf));
+		assertTrue("You are not putting the cards in order inside the List",c2.getCollection().get(3).equals(johnson));
 	}
 	
 	@Test
 	public void test2()
 	{
-		
+		assertEquals("getSize() is not working properly",6,c1.getSize());
+		dupes = c1.mergeCollections(c2);
+		assertEquals("The second collection should be empty after a merge",0,c2.getSize());
+		assertEquals("Your merged list is not the correct size",8,c1.getSize());
 	}
 	
 	@Test
 	public void test3()
 	{
-		
+		dupes = c2.mergeCollections(c1);
+		assertEquals("The second collection should be empty after a merge",0,c1.getSize());
+		assertEquals("You are not adding the correct items to the duplicate list",3,dupes.size());
 	}
 	
 	@Test
 	public void test4()
 	{
-		
+		c1.addCard(turing);
+		c1.addCard(shannon);
+		assertEquals("Duplicate cards should not be added to the list of the collection",6,c1.getSize());
+		c2.addCard(hopper);
+		assertEquals("Duplicate cards should not be added to the list of the collection",5,c2.getSize());
 	}
 }

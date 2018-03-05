@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 /**
  * Test class for CardCollection
- * @author stephengoebel
+ * @author Stephen Goebel
  * @version 1.0
  */
 public class CardCollectionTest 
@@ -36,24 +36,34 @@ public class CardCollectionTest
 	@Test
 	public void constructorTest()
 	{
-		
+		assertEquals("Your constructor is not assigning the owner correctly","John",john.getOwner());
+		assertEquals("Your toString and/or constructor are not correct","John\n-----\n",john.toString());
 	}
 	
 	@Test
 	public void addCardTest()
 	{
-		
+		john.addCard(card1);
+		assertEquals("addCard is not adding a new card properly",1,john.getCollection().size());
+		john.addCard(card1);
+		assertEquals("addCard should not add duplicate cards",1,john.getCollection().size());
 	}
 	
 	@Test
 	public void removeCardTest()
 	{
-		
+		john.addCard(card1);
+		john.removeCard(0);
+		assertEquals("removeCard does not remove the Card at the selected position",0,john.getCollection().size());
 	}
 	
 	@Test
 	public void mergeCollectionsTest()
 	{
-		
+		john.addCard(card1);
+		amy.addCard(card2);
+		john.mergeCollections(amy);
+		assertEquals("Two collections with no duplicates between them should merge perfectly into the first collection",2,john.getCollection().size());
+		assertEquals("The second collection that is merged into the first should be empty afterwards",0,amy.getCollection().size());
 	}
 }

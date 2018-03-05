@@ -24,6 +24,17 @@ public class Card implements Comparable<Card>
 	
 	/**
 	 * Add a description!
+	 * @return
+	 */
+	@Override
+	public boolean equals(Object other)
+	{
+		return false;
+	}
+	
+	/**
+	 * Add a description!
+	 * @return
 	 */
 	@Override
 	public int compareTo(Card o) 
@@ -33,6 +44,7 @@ public class Card implements Comparable<Card>
 	
 	/**
 	 * Add a description!
+	 * @return
 	 */
 	@Override
 	public String toString()

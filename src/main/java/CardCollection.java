@@ -70,7 +70,7 @@ public class CardCollection
 	
 	/**
 	 * Gets the List of Cards - Don't touch this method!
-	 * @return myCollection
+	 * @return myCollection List<Card>
 	 */
 	public List<Card> getCollection()
 	{
@@ -79,7 +79,7 @@ public class CardCollection
 	
 	/**
 	 * Gets the owner of the collection - Don't touch this method!
-	 * @return owner
+	 * @return owner's name
 	 */
 	public String getOwner()
 	{
